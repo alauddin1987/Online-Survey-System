@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+#body{ width:780px; height:auto; background-color:#069; border:1px solid #000; border-radius:5px;}
+#body_sur{ width:780px; height:auto; background-color:#069; border:1px solid #000; border-bottom:0px; border-radius:5px; border-bottom-left-radius:0px; border-bottom-right-radius:0px;}
+#header{width:778px; height:100px; border-width:thick; border:1px solid #F00; font-size:20px; color:#99FF00; text-shadow:2px #000000;}
+#header1{width:778px; height:80px; border-width:thick; border:1px solid #F00; font-size:20px; color:#99FF00; text-shadow:2px #000000;}
+#header3{width:778px; height:50px; border-bottom:1px solid #CF0; font-size:20px; color:#99FF00; text-shadow:2px #000000;}
+#header2{width:778px; height:80px; border-width:thick; background-image:url(../image/footer.jpg); background-attachment:scroll; font-size:20px; color:#99FF00; text-shadow:2px #000000;}
+#header_REG{width:778px; height:80px; border-width:thick; background-image:url(../image/signup.jpg); background-attachment:scroll; font-size:20px; color:#99FF00; text-shadow:2px #000000;}
+#footer_sur{width:780px; height:80px; border:1px solid #06F; border-left:1px solid #06C; border-right:1px solid #06C; background-image:url(../image/survey.jpg);color:#99FF00;}
+#form{width:778px; height:100px; text-align:left; border:1px solid #00FF99; font-weight:bold}
+#form_reg{width:778px; height:120px; text-align:left; border:1px solid #00FF99; font-weight:bold}
+#form_design{width:300px; height:auto; float:right; border-left:1px dashed #FFF; padding-left:15px;}
+#form_design1{width:445px; height:auto; float:left; vertical-align:middle; padding-left:16px; text-align:center; color:#CE4300; font-size:18px;font-weight:bolder; font-family:Arial, Helvetica, sans-serif; letter-spacing:3px; background-color:#F5F5F5;}
+.form_design6{width:400px; height:30px; float:inherit; vertical-align:middle; text-align:center; color:#FF0; border-bottom:3px solid #F39; font-size:18px;font-weight:bolder; font-family:Arial, Helvetica, sans-serif; letter-spacing:3px; background-color:#33CCCC;}
+#form_design table td{color:#FFF; font-size:12px;font-weight:bold; font-family:Arial, Helvetica, sans-serif; letter-spacing:3px;}
+#form_design table caption{color:#A3FF46; font-size:18px;font-weight:bold; font-family:Arial, Helvetica, sans-serif; letter-spacing:5px;}
+input{color: #781351; background: #CCCCCC; border: 1px solid #FFF; padding:1px 0px 1px 0px;}
+.button{color:#781351; background:FFF; border: 2px solid #EDDCDC; padding:2px 8px 2px 8px; letter-spacing:3px;}
+caption{color:#FF0; font-weight:bold;}
+label{width: 30em; float: left;text-align: left;margin-right: 0.5em;display: block;color:#FFF;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px; padding-left:30px;}
+
+div#beaker {
+height: 500px;
+position: relative;
+}
+div#beaker span.bubble {
+width: 100px;
+height: 100px;
+position: absolute;
+display: block;
+left: 600px;
+bottom: 110px;
+-webkit-border-radius: 200px;
+background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(239,29,43,.2)), to(rgba(255,255,255,.7)));
+-webkit-animation-name: bubbleFloat;
+-webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+}
+div#beaker span.glow {
+width: 100%;
+height: 100%;
+position: relative;
+display: block;
+-webkit-border-radius: 200px;
+-webkit-animation-name: redPulse;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bubbleFloat {
+from {
+bottom: 110px; -webkit-transform: scale(.3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+1% {
+bottom: 110px; -webkit-transform: scale(.3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+30% {
+bottom: 110px; -webkit-transform: scale(.8); opacity: 1; -webkit-animation-timing-function: ease-in-out; }
+95% {
+bottom: 545px; -webkit-transform: scale(.3); opacity: 1; -webkit-animation-timing-function: ease-in-out; }
+99% {
+bottom: 550px; -webkit-transform: scale(3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+to {
+bottom: 110px; -webkit-transform: scale(.9); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+}
+@-webkit-keyframes redPulse {
+from { -webkit-box-shadow: 0 0 30px #eb1c2a;}
+50% { -webkit-box-shadow: 0 0 80px #c91a26; }
+to { -webkit-box-shadow: 0 0 30px #eb1c2a;}
+}
